@@ -1,0 +1,11 @@
+.navbar-links li a {
+  @apply p-7 transition ease-out duration-300 hover:bg-slate-100;
+}
+
+.profile-menu-links li a {
+  @apply flex justify-center p-3 transition ease-out duration-300 hover:bg-slate-100;
+}
+
+.active {
+  @apply right-0;
+}

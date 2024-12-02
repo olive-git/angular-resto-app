@@ -1,0 +1,54 @@
+<div class="main-content flex flex-row justify-center items-center">
+  <div class="login-left-pane w-[55%] h-full">
+    <h1 class="font-black text-5xl text-white">Welcome!</h1>
+  </div>
+
+  <div class="w-[45%] h-full flex flex-col justify-start">
+    <div class="h-[80%] flex flex-col justify-center w-full">
+      <div class="mx-[8rem] flex flex-col items-center rounded-md">
+        <h1 class="text-xl font-black my-5">Login</h1>
+        <form class="h-3/4 w-full px-10 flex flex-col justify-center">
+          <div class="form-inputs">
+            <div class="input-container flex flex-col gap-2">
+              <label for="login">Login</label>
+              <input type="text" name="login" id="login" [(ngModel)]="login" />
+              <span
+                class="error-text text-red-600 text-2 font-extrabold"
+              ></span>
+            </div>
+            <div class="input-container flex flex-col gap-2">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                [(ngModel)]="password"
+              />
+              <span
+                class="error-text text-red-600 text-2 font-extrabold"
+              ></span>
+            </div>
+          </div>
+
+          <div class="form-submit flex flex-col items-center gap-5 mt-5">
+            <button
+              (click)="loginFunc()"
+              type="button"
+              class="px-7 py-2 bg-blue-500 text-white shadow-md rounded-md w-full"
+            >
+              Login
+            </button>
+            <div class="flex gap-5">
+              <a routerLink="login" class="text-2 text-blue-700 hover:underline"
+                >Password forgotten ?</a
+              >
+              <a routerLink="login" class="text-2 text-blue-700 hover:underline"
+                >Register now!</a
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

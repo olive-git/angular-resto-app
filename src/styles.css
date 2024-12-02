@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+html,
+body,
+main {
+  height: 100vh;
+}
+
+.main-content {
+  height: calc(100vh - 75px);
+}
+
+input {
+  @apply px-4 py-2 rounded-lg shadow-sm border border-slate-100 focus:outline-none;
+}
+
+.input-container {
+  @apply mb-2;
+}
